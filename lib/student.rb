@@ -23,7 +23,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name).map do |row|
-      self.new_from_db(row)        #uses .new_from_db to retrieve and set attributes of new Song class instance 
+      self.new_from_db(row)        #uses .new_from_db to retrieve and set attributes of new Song class instance
     end.first
   end
 
